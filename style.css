@@ -25,6 +25,14 @@ body{
   left: 50%;
   transform: translate(-50%);
 }
+img{
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 h2{
   text-align: center;
   padding: 20px 0;

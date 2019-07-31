@@ -1,53 +1,66 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-body{
-  background: url("default.jpg");
+
+body {
+  background: url("bgimg.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  padding-top: 5%;
 }
-.card{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 350px;
-  height: 420px;
-  padding: 60px 40px;
+
+.card {
+  position: relative;
+  width: 30%;
+  margin: auto;
+  padding: 70px 0 20px 0;
   background: rgba(0, 0, 0, 0.5);
-  /* background-color: skyblue; */
+  border-radius: 10px;
 }
-.user{
+
+.user-img {
   position: absolute;
   top: -10%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -10%);
 }
-img{
-  user-drag: none;
+img {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-h2{
+
+h2 {
   text-align: center;
-  padding: 20px 0;
-  color: #0066ff;
-}
-p{
-  color: #fff;
-  font-weight: bold;
   padding: 10px 0;
+  background-color: #1aa3ff;
+  width: 100%;
 }
-input{
+
+form {
+  padding: 20px 40px 0 40px;
+}
+
+p {
+  position: absolute;
+  color: #bbb;
+  padding: 10px 0;
+  pointer-events: none;
+  display: none;
+}
+
+.input {
   width: 100%;
   margin-bottom: 20px;
+  position: relative;
 }
-input[type=text], input[type=password]{
+input[type=text], input[type=password] {
+  width: 100%;
   border: none;
   border-bottom: solid 1px #fff;
   background: transparent;
@@ -55,11 +68,11 @@ input[type=text], input[type=password]{
   outline: none;
   color: #fff;
   font-size: 16px;
+  font-weight: bolder;
 }
-::placeholder{
-  color: rgba(255, 255, 255, 0.5);
-}
-input[type=submit]{
+
+button {
+  width: 100%;
   border: none;
   border-radius: 50px;
   background-color: #1aa3ff;
@@ -68,13 +81,18 @@ input[type=submit]{
   color: #fff;
   font-size: 16px;
   font-weight: bold;
+  margin: 5px auto;
 }
-input[type=submit]:hover{
+button:hover, button:focus {
   cursor: pointer;
   background-color: #0066ff;
 }
-a{
+
+a {
   text-decoration: none;
   color: #fff;
   font-family: serif;
+}
+a:hover, a:focus {
+  text-decoration: underline;
 }

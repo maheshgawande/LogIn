@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div class="card">
-      <img src="user.png" width="100px" height="100px" class="user">
-      <h2>Log in here</h2>
-      <form action="index.html" method="post">
-        <p>Username</p>
-        <input type="text" name="username" placeholder="Enter username">
-        <p>Password</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Log in</title>
+</head>
+<body>
+  <div class="card">
+    <img src="user.png" width="100px" height="100px" class="user-img">
+
+    <h2>Log in here</h2>
+
+    <form action="#" method="post">
+      <div class="input">
+        <!-- <p>Username</p> -->
+        <input type="text" name="username" placeholder="username">
+      </div>
+
+      <div class="input">
+        <!-- <p>Password</p> -->
         <input type="password" name="password" placeholder="........">
-        <input type="submit" name="submit" value="Log In">
         <a href="#">forgot password!</a>
-      </form>
-    </div>
-  </body>
+      </div>
+
+      <button>Log In</button>
+    </form>
+  </div>
+</body>
 </html>

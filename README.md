@@ -1,5 +1,5 @@
 # LogIn-web-page
-  Simple static log in web page.
+  Simple static login web page.
   
 # Screenshots
-  ![LogIn-and-SignUp-Screenshot](https://github.com/maheshgawande/screenshots/blob/master/LoginAndSignup/LoginAndSignup(ss).png)
+  ![LogIn-Screenshot](https://github.com/maheshgawande/screenshots/blob/master/Login/Login(ss).png)
